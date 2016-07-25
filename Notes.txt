@@ -1,0 +1,47 @@
+#!/bin/bash
+
+read name   #reads input
+echo "Welcome $name"    $output with the variable name.
+
+#looping with the for loop from 1 to 99 with the incremental value of 2
+for i in {1..99..2}
+    do
+        echo "$i"
+    done
+
+Arithmetic operations:
+read a
+read b
+echo `expr $a + $b`
+echo `expr $a - $b`
+echo `expr $a \* $b`
+echo `expr $a / $b`
+
+Comparing numbers:
+read a
+read b
+
+if [ "$a" -eq "$b" ];then
+  echo "X is equal to Y";
+elif [ "$a" -gt "$b" ];then
+  echo "X is greater than Y";
+else
+    echo "X is less than Y";
+fi;
+
+-eq # equal
+-ne # not equal
+-lt # less than
+-le # less than or equal
+-gt # greater than
+-ge # greater than or equal
+
+
+String comparison using == or !=
+read a
+
+if [ "$a" == "y" ] || [ "$a" == "Y" ];then
+  echo "YES";
+elif [ "$a" == "n" ] || [ "$a" == "N" ];then
+  echo "NO";
+fi;
